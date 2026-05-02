@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/mmagh/Downloads/confidentialite_3.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité — Hey Mama</title>
+  <meta name="description" content="Politique de confidentialité de l&#39;application Hey Mama — Vos droits RGPD, les données collectées et leur utilisation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link href="./Politique de Confidentialité — Hey Mama_files/css2" rel="stylesheet">
+
+  <style>
+    :root {
+      --orange:      #FF6E14;
+      --orange-soft: #FFF0E8;
+      --noir:        #121212;
+      --beige:       #F9F6F0;
+      --gris:        #6B7280;
+      --blanc:       #FFFFFF;
+      --border:      #E8E3DB;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--beige);
+      color: var(--noir);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--noir);
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 3px solid var(--orange);
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      color: var(--blanc);
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--orange); }
+
+    .badge-rgpd {
+      background: var(--orange);
+      color: var(--blanc);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--noir);
+      color: var(--blanc);
+      padding: 64px 24px 48px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 em {
+      color: var(--orange);
+      font-style: italic;
+    }
+
+    .hero p {
+      color: #9CA3AF;
+      font-size: 15px;
+      max-width: 520px;
+      margin: 0 auto 24px;
+    }
+
+    .hero-meta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 30px;
+      padding: 8px 16px;
+      font-size: 13px;
+      color: #D1D5DB;
+    }
+
+    .hero-meta .dot {
+      width: 7px; height: 7px;
+      background: #22C55E;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── SOMMAIRE ── */
+    .sommaire-wrap {
+      max-width: 900px;
+      margin: 40px auto 0;
+      padding: 0 24px;
+    }
+
+    .sommaire {
+      background: var(--blanc);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 10px 24px;
+    }
+
+    .sommaire-title {
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gris);
+      margin-bottom: 16px;
+      grid-column: 1 / -1;
+    }
+
+    .sommaire a {
+      color: var(--noir);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+
+    .sommaire a:hover { color: var(--orange); }
+
+    .sommaire a .num {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--orange);
+      background: var(--orange-soft);
+      width: 22px; height: 22px;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* ── CONTENU ── */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .section {
+      background: var(--blanc);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 40px;
+      margin-bottom: 24px;
+      scroll-margin-top: 80px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--beige);
+    }
+
+    .section-num {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--orange);
+      background: var(--orange-soft);
+      padding: 6px 10px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      margin-top: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      color: var(--noir);
+      line-height: 1.3;
+    }
+
+    .section p {
+      color: #374151;
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    /* Tableau données */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 20px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .data-table th {
+      background: var(--noir);
+      color: var(--blanc);
+      text-align: left;
+      padding: 12px 16px;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .data-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      color: #374151;
+    }
+
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:nth-child(even) td { background: var(--beige); }
+
+    /* Liste droits */
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .right-card {
+      background: var(--beige);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .right-card .right-icon {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .right-card .right-title {
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--noir);
+      margin-bottom: 4px;
+    }
+
+    .right-card .right-desc {
+      font-size: 12px;
+      color: var(--gris);
+      line-height: 1.5;
+    }
+
+    /* Encart alerte */
+    .alert-box {
+      background: var(--orange-soft);
+      border-left: 4px solid var(--orange);
+      border-radius: 0 12px 12px 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #92400E;
+    }
+
+    .alert-box strong { color: var(--orange); }
+
+    /* Contact card */
+    .contact-card {
+      background: var(--noir);
+      color: var(--blanc);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-top: 20px;
+    }
+
+    .contact-card h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      margin-bottom: 16px;
+      color: var(--blanc);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: 14px;
+      color: #D1D5DB;
+    }
+
+    .contact-item:last-child { border-bottom: none; }
+    .contact-item .ci-label { font-weight: 600; color: var(--orange); width: 140px; flex-shrink: 0; }
+    .contact-item a { color: #D1D5DB; text-decoration: none; }
+    .contact-item a:hover { color: var(--orange); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--noir);
+      color: #6B7280;
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      border-top: 3px solid var(--orange);
+    }
+
+    footer strong { color: var(--orange); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .section { padding: 24px 20px; }
+      .sommaire { padding: 20px; }
+      .contact-card { padding: 20px; }
+      .rights-grid { grid-template-columns: 1fr 1fr; }
+      .data-table { font-size: 12px; }
+      .data-table th, .data-table td { padding: 10px 12px; }
+    }
+
+    /* Animation d'entrée */
+    .section {
+      animation: fadeUp 0.4s ease both;
+    }
+    .section:nth-child(2)  { animation-delay: 0.05s; }
+    .section:nth-child(3)  { animation-delay: 0.10s; }
+    .section:nth-child(4)  { animation-delay: 0.15s; }
+    .section:nth-child(5)  { animation-delay: 0.20s; }
+    .section:nth-child(6)  { animation-delay: 0.25s; }
+    .section:nth-child(7)  { animation-delay: 0.30s; }
+    .section:nth-child(8)  { animation-delay: 0.35s; }
+    .section:nth-child(9)  { animation-delay: 0.40s; }
+    .section:nth-child(10) { animation-delay: 0.45s; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="file:///C:/" class="logo">Hey<span>Mama</span></a>
+      <span class="badge-rgpd">RGPD</span>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Politique de<br><em>Confidentialité</em></h1>
+    <p>Vos données personnelles nous appartiennent — nous les traitons avec le respect qu'elles méritent.</p>
+    <div class="hero-meta">
+      <span class="dot"></span>
+      Conforme RGPD &amp; CNIL &nbsp;·&nbsp; Dernière mise à jour : Mai 2026
+    </div>
+  </div>
+
+  <!-- SOMMAIRE -->
+  <div class="sommaire-wrap">
+    <nav class="sommaire" aria-label="Sommaire">
+      <p class="sommaire-title">Sommaire</p>
+      <a href="file:///C:/Users/mmagh/Downloads/confidentialite_3.html#s1"><span class="num">1</span> Responsable de traitement</a>
+      <a href="file:///C:/Users/mmagh/Downloads/confidentialite_3.html#s2"><span class="num">2</span> Données collectées</a>
+      <a href="file:///C:/Users/mmagh/Downloads/confidentialite_3.html#s3"><span class="num">3</span> Finalités &amp; bases légales</a>
+      <a href="file:///C:/Users/mmagh/Downloads/confidentialite_3.html#s4"><span class="num">4</span> Durée de conservation</a>
+      <a href="file:///C:/Users/mmagh/Downloads/confidentialite_3.html#s5"><span class="num">5</span> Destinataires</a>
+      <a href="file:///C:/Users/mmagh/Downloads/confidentialite_3.html#s6"><span class="num">6</span> Transferts hors UE</a>
+      <a href="file:///C:/Users/mmagh/Downloads/confidentialite_3.html#s7"><span class="num">7</span> Vos droits</a>
+      <a href="file:///C:/Users/mmagh/Downloads/confidentialite_3.html#s8"><span class="num">8</span> Cookies &amp; traceurs</a>
+      <a href="file:///C:/Users/mmagh/Downloads/confidentialite_3.html#s9"><span class="num">9</span> Sécurité</a>
+      <a href="file:///C:/Users/mmagh/Downloads/confidentialite_3.html#s10"><span class="num">10</span> Contact &amp; réclamations</a>
+    </nav>
+  </div>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main>
+
+    <!-- 1. Responsable -->
+    <section class="section" id="s1">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2>Responsable de traitement</h2>
+      </div>
+      <p>
+        Le responsable du traitement des données personnelles collectées via l'application mobile
+        <strong>Hey Mama</strong> est :
+      </p>
+      <div class="contact-card">
+        <h3>Association Hey Mama</h3>
+        <div class="contact-item">
+          <span class="ci-label">Statut juridique</span>
+          Association Loi 1901 — Économie Sociale et Solidaire (ESS)
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">Récépissé</span>
+          Préfecture — 21 avril 2026
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">Email de contact</span>
+          <a href="mailto:heymama.fondation@gmail.com">heymama.fondation@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">DPO</span>
+          M.O. Ma — <a href="mailto:heymama.fondation@gmail.com" style="color: var(--orange);">heymama.fondation@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Données collectées -->
+    <section class="section" id="s2">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>Données collectées</h2>
+      </div>
+      <p>
+        Hey Mama collecte uniquement les données strictement nécessaires au fonctionnement
+        du service de mise en relation entre particuliers (principe de minimisation — Art. 5 RGPD).
+      </p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Catégorie</th>
+            <th>Données</th>
+            <th>Profil concerné</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Identité</strong></td>
+            <td>Prénom, nom, date de naissance, photo de profil</td>
+            <td>Mama &amp; Gourmand</td>
+          </tr>
+          <tr>
+            <td><strong>Coordonnées</strong></td>
+            <td>Adresse email, numéro de téléphone, adresse postale</td>
+            <td>Mama &amp; Gourmand</td>
+          </tr>
+          <tr>
+            <td><strong>Localisation</strong></td>
+            <td>Position GPS (latitude/longitude) — uniquement lors de l'utilisation active</td>
+            <td>Mama &amp; Gourmand</td>
+          </tr>
+          <tr>
+            <td><strong>Paiement</strong></td>
+            <td>Token de carte bancaire (géré par Stripe — nous ne stockons jamais les données brutes de carte)</td>
+            <td>Gourmand</td>
+          </tr>
+          <tr>
+            <td><strong>Contenu utilisateur</strong></td>
+            <td>Photos de plats, descriptions, messages du chat</td>
+            <td>Mama</td>
+          </tr>
+          <tr>
+            <td><strong>Données de santé légères</strong></td>
+            <td>Allergies alimentaires déclarées (facultatif)</td>
+            <td>Gourmand</td>
+          </tr>
+          <tr>
+            <td><strong>Données d'usage</strong></td>
+            <td>Historique des réservations, avis, signalements</td>
+            <td>Mama &amp; Gourmand</td>
+          </tr>
+          <tr>
+            <td><strong>Données techniques</strong></td>
+            <td>Token FCM (notifications push), identifiant Firebase</td>
+            <td>Mama &amp; Gourmand</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="alert-box">
+        <strong>Important :</strong> Nous ne collectons jamais les numéros de carte bancaire complets.
+        Les paiements sont gérés exclusivement par <strong>Stripe</strong> (certifié PCI-DSS niveau 1),
+        qui tokenise les données de carte avant tout traitement.
+      </div>
+    </section>
+
+    <!-- 3. Finalités -->
+    <section class="section" id="s3">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2>Finalités &amp; bases légales</h2>
+      </div>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Finalité</th>
+            <th>Base légale (Art. 6 RGPD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Création et gestion de votre compte utilisateur</td>
+            <td>Exécution du contrat</td>
+          </tr>
+          <tr>
+            <td>Mise en relation Mama / Gourmand et gestion des réservations</td>
+            <td>Exécution du contrat</td>
+          </tr>
+          <tr>
+            <td>Traitement des paiements et virements vers les Mamas</td>
+            <td>Exécution du contrat</td>
+          </tr>
+          <tr>
+            <td>Géolocalisation pour afficher les plats à proximité</td>
+            <td>Exécution du contrat + Consentement explicite (permission Android)</td>
+          </tr>
+          <tr>
+            <td>Partage de position GPS pendant le trajet de récupération</td>
+            <td>Consentement explicite (permission Android)</td>
+          </tr>
+          <tr>
+            <td>Envoi de notifications push (commandes, messages)</td>
+            <td>Consentement explicite (permission Android)</td>
+          </tr>
+          <tr>
+            <td>Modération, gestion des signalements et sécurité de la plateforme</td>
+            <td>Intérêt légitime (sécurité des utilisateurs)</td>
+          </tr>
+          <tr>
+            <td>Respect des obligations légales (plafond ESS, comptabilité)</td>
+            <td>Obligation légale</td>
+          </tr>
+          <tr>
+            <td>Amélioration du service et statistiques anonymisées</td>
+            <td>Intérêt légitime</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Nous ne pratiquons <strong>aucun profilage automatisé</strong> à des fins commerciales.
+        Hey Mama n'affiche pas de publicité et ne vend aucune donnée à des tiers.
+      </p>
+    </section>
+
+    <!-- 4. Conservation -->
+    <section class="section" id="s4">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2>Durée de conservation</h2>
+      </div>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Donnée</th>
+            <th>Durée de conservation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Données de compte (profil, email, téléphone)</td>
+            <td>Durée de vie du compte + 3 ans après suppression</td>
+          </tr>
+          <tr>
+            <td>Historique des réservations et paiements</td>
+            <td>10 ans (obligation comptable légale)</td>
+          </tr>
+          <tr>
+            <td>Données GPS de trajet (position pendant récupération)</td>
+            <td>Supprimées à la validation de la commande</td>
+          </tr>
+          <tr>
+            <td>Messages du chat</td>
+            <td>1 an après la clôture de la réservation</td>
+          </tr>
+          <tr>
+            <td>Photos de plats</td>
+            <td>Durée de publication du plat + 30 jours</td>
+          </tr>
+          <tr>
+            <td>Signalements et données de modération</td>
+            <td>3 ans à compter du traitement</td>
+          </tr>
+          <tr>
+            <td>Tokens FCM (notifications)</td>
+            <td>Durée de vie du compte — mis à jour automatiquement</td>
+          </tr>
+          <tr>
+            <td>Logs techniques (Crashlytics)</td>
+            <td>90 jours</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="alert-box">
+        <strong>Données GPS :</strong> Conformément au principe de minimisation, vos coordonnées GPS
+        sont effacées de nos serveurs dès que la commande est validée.
+        Elles ne sont jamais utilisées à des fins de profilage ou de marketing.
+      </div>
+    </section>
+
+    <!-- 5. Destinataires -->
+    <section class="section" id="s5">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2>Destinataires des données</h2>
+      </div>
+      <p>Vos données sont partagées uniquement avec les prestataires techniques indispensables au fonctionnement du service :</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Prestataire</th>
+            <th>Rôle</th>
+            <th>Données transmises</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Google Firebase</strong></td>
+            <td>Base de données, authentification, stockage, notifications</td>
+            <td>Profil, réservations, messages, token FCM</td>
+          </tr>
+          <tr>
+            <td><strong>Stripe</strong></td>
+            <td>Traitement des paiements et virements</td>
+            <td>Email, token de carte (jamais les données brutes)</td>
+          </tr>
+          <tr>
+            <td><strong>Google Maps</strong></td>
+            <td>Affichage de carte et calcul d'itinéraire</td>
+            <td>Position GPS (anonymisée côté API)</td>
+          </tr>
+          <tr>
+            <td><strong>Firebase Crashlytics</strong></td>
+            <td>Rapport d'erreurs et stabilité de l'app</td>
+            <td>Logs techniques anonymisés</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Hey Mama ne vend, ne loue et ne cède jamais vos données personnelles à des tiers
+        à des fins commerciales. Nos administrateurs ont accès aux données dans le seul
+        but d'assurer la modération et la sécurité de la plateforme.
+      </p>
+    </section>
+
+    <!-- 6. Transferts hors UE -->
+    <section class="section" id="s6">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2>Transferts hors Union Européenne</h2>
+      </div>
+      <p>
+        Certains de nos prestataires (Google Firebase, Stripe) sont des sociétés américaines.
+        Leurs infrastructures européennes sont utilisées en priorité :
+      </p>
+      <ul style="margin: 12px 0 12px 20px; color: #374151; font-size: 15px; line-height: 2;">
+        <li>Les serveurs Firebase sont configurés sur la région <strong>europe-west1</strong> (Belgique).</li>
+        <li>Stripe traite les paiements européens depuis ses datacenters européens.</li>
+        <li>Ces transferts sont encadrés par les <strong>Clauses Contractuelles Types</strong> (CCT)
+            de la Commission Européenne et/ou les certifications <strong>EU-U.S. Data Privacy Framework</strong>.</li>
+      </ul>
+    </section>
+
+    <!-- 7. Droits -->
+    <section class="section" id="s7">
+      <div class="section-header">
+        <span class="section-num">07</span>
+        <h2>Vos droits</h2>
+      </div>
+      <p>Conformément au RGPD (Articles 15 à 22), vous disposez des droits suivants :</p>
+
+      <div class="rights-grid">
+        <div class="right-card">
+          <div class="right-icon">👁️</div>
+          <div class="right-title">Droit d'accès</div>
+          <div class="right-desc">Obtenir une copie de vos données personnelles que nous détenons.</div>
+        </div>
+        <div class="right-card">
+          <div class="right-icon">✏️</div>
+          <div class="right-title">Droit de rectification</div>
+          <div class="right-desc">Corriger vos données inexactes ou incomplètes.</div>
+        </div>
+        <div class="right-card">
+          <div class="right-icon">🗑️</div>
+          <div class="right-title">Droit à l'effacement</div>
+          <div class="right-desc">Demander la suppression de vos données (droit à l'oubli).</div>
+        </div>
+        <div class="right-card">
+          <div class="right-icon">⏸️</div>
+          <div class="right-title">Droit à la limitation</div>
+          <div class="right-desc">Limiter le traitement de vos données dans certains cas.</div>
+        </div>
+        <div class="right-card">
+          <div class="right-icon">📦</div>
+          <div class="right-title">Droit à la portabilité</div>
+          <div class="right-desc">Recevoir vos données dans un format structuré et lisible.</div>
+        </div>
+        <div class="right-card">
+          <div class="right-icon">🚫</div>
+          <div class="right-title">Droit d'opposition</div>
+          <div class="right-desc">Vous opposer au traitement basé sur notre intérêt légitime.</div>
+        </div>
+        <div class="right-card">
+          <div class="right-icon">🤖</div>
+          <div class="right-title">Décision automatisée</div>
+          <div class="right-desc">Ne pas faire l'objet d'une décision basée uniquement sur un traitement automatisé.</div>
+        </div>
+        <div class="right-card">
+          <div class="right-icon">↩️</div>
+          <div class="right-title">Retrait du consentement</div>
+          <div class="right-desc">Retirer votre consentement à tout moment pour les traitements basés sur celui-ci.</div>
+        </div>
+      </div>
+
+      <div class="alert-box" style="margin-top: 24px;">
+        <strong>Comment exercer vos droits ?</strong> Envoyez un email à
+        <a href="mailto:heymama.fondation@gmail.com" style="color: var(--orange);">heymama.fondation@gmail.com</a>
+        avec l'objet <em>"Exercice de droits RGPD"</em>. Nous vous répondrons dans un délai maximum de
+        <strong>30 jours</strong> (Art. 12 RGPD).
+      </div>
+    </section>
+
+    <!-- 8. Cookies -->
+    <section class="section" id="s8">
+      <div class="section-header">
+        <span class="section-num">08</span>
+        <h2>Cookies &amp; traceurs</h2>
+      </div>
+      <p>
+        L'application mobile Hey Mama <strong>n'utilise pas de cookies</strong> au sens traditionnel
+        du terme (l'application n'est pas un site web).
+      </p>
+      <p>
+        Des identifiants techniques (Firebase UID, token FCM) sont stockés localement sur votre
+        appareil afin d'assurer le bon fonctionnement de l'authentification et des notifications.
+        Ces données sont <strong>strictement nécessaires</strong> au service et ne nécessitent pas de consentement
+        préalable (base légale : intérêt légitime / exécution du contrat).
+      </p>
+      <p>
+        Firebase Crashlytics collecte des données techniques anonymisées pour améliorer la stabilité
+        de l'application. Ces données ne contiennent aucune information personnelle identifiable.
+      </p>
+    </section>
+
+    <!-- 9. Sécurité -->
+    <section class="section" id="s9">
+      <div class="section-header">
+        <span class="section-num">09</span>
+        <h2>Sécurité des données</h2>
+      </div>
+      <p>Hey Mama met en œuvre les mesures techniques et organisationnelles suivantes :</p>
+      <ul style="margin: 12px 0 12px 20px; color: #374151; font-size: 15px; line-height: 2.2;">
+        <li><strong>Chiffrement en transit</strong> — Toutes les communications sont chiffrées via HTTPS/TLS.</li>
+        <li><strong>Authentification sécurisée</strong> — Firebase Auth avec mots de passe chiffrés (bcrypt), token JWT signé.</li>
+        <li><strong>Contrôle d'accès granulaire</strong> — Règles Firestore strictes : chaque utilisateur n'accède qu'à ses propres données.</li>
+        <li><strong>Paiements sécurisés</strong> — Stripe certifié PCI-DSS niveau 1. Nous ne stockons jamais les données brutes de carte.</li>
+        <li><strong>Accès administrateur limité</strong> — Seuls les administrateurs désignés ont accès aux données de modération.</li>
+        <li><strong>Surveillance</strong> — Firebase Crashlytics et monitoring en temps réel pour détecter les anomalies.</li>
+      </ul>
+      <p>
+        En cas de violation de données susceptible d'engendrer un risque pour vos droits et libertés,
+        nous nous engageons à notifier la CNIL dans les <strong>72 heures</strong> (Art. 33 RGPD)
+        et vous en informer dans les meilleurs délais si la violation vous concerne directement.
+      </p>
+    </section>
+
+    <!-- 10. Contact -->
+    <section class="section" id="s10">
+      <div class="section-header">
+        <span class="section-num">10</span>
+        <h2>Contact &amp; réclamations</h2>
+      </div>
+      <p>
+        Pour toute question relative à la présente politique ou pour exercer vos droits,
+        contactez-nous :
+      </p>
+
+      <div class="contact-card">
+        <h3>Association Hey Mama</h3>
+        <div class="contact-item">
+          <span class="ci-label">Email</span>
+          <a href="mailto:heymama.fondation@gmail.com">heymama.fondation@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">Objet du mail</span>
+          "Exercice de droits RGPD" ou "Question confidentialité"
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">Délai de réponse</span>
+          30 jours maximum (Art. 12 RGPD)
+        </div>
+      </div>
+
+      <p style="margin-top: 24px;">
+        Si vous estimez que le traitement de vos données ne respecte pas la réglementation,
+        vous avez le droit d'introduire une réclamation auprès de la
+        <strong>Commission Nationale de l'Informatique et des Libertés (CNIL)</strong> :
+      </p>
+      <div class="alert-box">
+        <strong>CNIL</strong> — 3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07<br>
+        Site : <a href="https://www.cnil.fr/" target="_blank" rel="noopener" style="color: var(--orange);">www.cnil.fr</a>
+        &nbsp;·&nbsp; Tél : 01 53 73 22 22
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <strong>Association Hey Mama</strong> — ESS Loi 1901 — Récépissé préfecture 21/04/2026<br>
+      Politique de confidentialité · Version 1.0 · Mai 2026<br>
+      <span style="font-size: 12px; color: #4B5563; margin-top: 8px; display: block;">
+        Cette politique peut être mise à jour. La date de dernière révision est indiquée en haut de page.
+      </span>
+    </p>
+  </footer>
+
+
+
+</body></html>
